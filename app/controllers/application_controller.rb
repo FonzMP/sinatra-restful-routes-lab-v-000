@@ -8,6 +8,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes' do
-    erb :recipe
+    erb :recipes
   end
 end
