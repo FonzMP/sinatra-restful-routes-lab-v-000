@@ -9,7 +9,7 @@
       <input id="hidden" type="hidden" name="_method" value="patch">
 
       <label for="recipe_name"><%= @recipe[:name] %>:</label>
-      <input type="text" name="name" id="post_name" value="<%= @recipe[:name] %>">
+      <input type="text" name="name" value="<%= @recipe[:name] %>">
       <label for="post_content">Post Content:</label>
       <input type="text" name="content" id="post_content" value="<%= @recipe[:content] %>">
       <input type="submit" value="submit">
