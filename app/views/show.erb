@@ -9,5 +9,10 @@
     <h3>Recipe Ingredients: <%= @recipe.ingredients %></h3>
     <h3>Recipe Cook Time: <%= @recipe.cook_time %> minutes</h3>
     <a href="/recipes/<%= @recipe.id %>/delete"></a>
+
+    <form method="post" action="/models/<%= @model.id %>/delete">
+      <input id="hidden" type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="delete">
+    </form>
   </body>
 </html>
