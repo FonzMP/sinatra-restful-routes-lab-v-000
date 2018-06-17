@@ -5,7 +5,7 @@
     <title>Edit Recipe</title>
   </head>
   <body>
-    <h1>Now Editing: <%= @recipe.name %>
+    <h1>Now Editing: <%= @recipe.name %></h1>
       <form action="/recipes/<%= @recipe.id %>" method="post">
         <input id="hidden" type="hidden" name="_method" value="patch">
         <label for="name">Name: </label>
