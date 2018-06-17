@@ -8,6 +8,6 @@
     <h1>Show Recipe: <%= @recipe.name %></h1>
     <h3>Recipe Ingredients: <%= @recipe.ingredients %></h3>
     <h3>Recipe Cook Time: <%= @recipe.cook_time %> minutes</h3>
-    <a href="/recipes/:id/delete"></a>
+    <a href="/recipes/<%= @recipe.id %>/delete"></a>
   </body>
 </html>
