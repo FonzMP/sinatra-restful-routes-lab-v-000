@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     recipe = Recipe.new
     recipe.name = params[:name]
     recipe.ingredients = params[:ingredients]
-    recipe.name = params[:name]
+    recipe.cooking_time = params[:cooking_time]
     recipe.save
 
     redirect "/recipes/:id/show"
