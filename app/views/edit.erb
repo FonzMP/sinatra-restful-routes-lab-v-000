@@ -8,7 +8,7 @@
     <form action="/recipes/<%= @recipe.id %>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
 
-      <label for="recipe_name"><%= @recipe[:name] %>:</label>
+      <label><%= @recipe[:name] %>:</label>
       <input type="text" name="name" value="<%= @recipe[:name] %>">
       <label for="post_content">Post Content:</label>
       <input type="text" name="content" id="post_content" value="<%= @recipe[:content] %>">
