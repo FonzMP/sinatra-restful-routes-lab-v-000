@@ -27,9 +27,6 @@ class ApplicationController < Sinatra::Base
     recipe.save
 
     redirect "/recipes/#{Recipe.last.id}"
-
-    binding.pry
-
   end
 
   get '/recipes/:id' do
