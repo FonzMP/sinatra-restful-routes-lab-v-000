@@ -22,6 +22,8 @@ class ApplicationController < Sinatra::Base
     binding.pry
     recipe = Recipe.new
     recipe.name = params[:name]
+    recipe.ingredients = params[:ingredients]
+    recipe.name = params[:name]
     recipe.save
 
     redirect "/recipes/:id/show"
